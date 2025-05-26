@@ -1,27 +1,15 @@
-// Importaciones principales de Angular
-import { NgModule } from '@angular/core';
+import { NgModule } from '@angular/core'; // Importaciones principales de Angular
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
-
-// Importaciones de Ionic para la estructura de la app
-import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
-
-// Componente principal de la aplicación
-import { AppComponent } from './app.component';
-
-// Módulo de rutas
+import { IonicModule, IonicRouteStrategy } from '@ionic/angular'; // Importaciones de Ionic para la estructura de la app
+import { AppComponent } from './app.component'; // Componente principal de la aplicación
 import { AppRoutingModule } from './app-routing.module';
-
-// Tu servicio de autenticación personalizado
 import { AuthService } from './auth/auth.service';
-
-// Importaciones de Firebase usando los módulos compat
-import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireModule } from '@angular/fire/compat'; // Importaciones de Firebase usando los módulos compat
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 
-// Importación del archivo de configuración de Firebase
-import { environment } from '../environments/environment';
+import { environment } from '../environments/environment';// Importación del archivo de configuración de Firebase
 
 import { ReactiveFormsModule } from '@angular/forms';
 
@@ -33,7 +21,7 @@ import { ReactiveFormsModule } from '@angular/forms';
   imports: [
     BrowserModule, // Necesario para aplicaciones web
     IonicModule.forRoot(), // Inicializa Ionic
-    AppRoutingModule, // Rutas de navegación
+    AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebaseConfig), // Inicializa Firebase con la configuración
     AngularFireAuthModule, // Habilita la autenticación con Firebase
     AngularFirestoreModule, // Habilita el uso de Firestore (base de datos)
@@ -49,7 +37,7 @@ import { ReactiveFormsModule } from '@angular/forms';
   // Componente raíz que se inicializa al arrancar la app
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
 
 
 

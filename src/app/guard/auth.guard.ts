@@ -19,4 +19,4 @@ export const authGuard: CanActivateFn = (route, state) => {
 };
 
 
-// En este caso, Firebase se encarga. 
+// Investigar un guard para rutas de Firebase 
