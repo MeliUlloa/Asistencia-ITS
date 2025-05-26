@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AuthService } from '../auth.service';
 import { Router } from '@angular/router';
-import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-login',
@@ -21,7 +20,7 @@ export class LoginPage {
   constructor(
     private fb: FormBuilder,
     private authService: AuthService,
-    public navCtrl: NavController
+    public router: Router
   ) {}
 
   // Metodo que se llama al enviar el formulario
@@ -35,7 +34,7 @@ export class LoginPage {
 
     try {
       await this.authService.login(email!, password!);
-      this.navCtrl.navigateRoot('/home');
+      this.router.navigateByUrl('/home');
     } catch (error) {
       console.error('Error al Iniciar Sesión', error);
     }

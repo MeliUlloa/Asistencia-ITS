@@ -1,11 +1,12 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Login</ion-title>
+    <ion-title>Iniciar Sesión</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="ion-padding">
 
+  <!-- Formulario reactivo de inicio de sesión -->
   <form [formGroup]="form" (ngSubmit)="login()">
     <ion-item>
       <ion-input
@@ -28,7 +29,7 @@
     </ion-button>
   </form>
 
-  <ion-button fill="clear" (click)="navCtrl.navigateForward('/register')">
+  <ion-button fill="clear" (click)="router.navigate(['/register'])">
     Crear cuenta
   </ion-button>
 
