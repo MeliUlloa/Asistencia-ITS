@@ -34,11 +34,13 @@ Esta aplicación móvil desarrollada con Ionic permite a los usuarios registrar 
 
 ## Video de demostración
 
-Mira el funcionamiento de la app en el siguiente video:
+## Videos de demostración
 
-[![Video de demostración](https://img.youtube.com/vi/MohgNTWAvlQ/maxresdefault.jpg)](https://www.youtube.com/shorts/MohgNTWAvlQ)
+### 🔗 Video 1
+[![Video de referencia](https://img.youtube.com/vi/MohgNTWAvlQ/maxresdefault.jpg)](https://www.youtube.com/shorts/MohgNTWAvlQ)
 
-[![Video de demostración](https://img.youtube.com/vi/MohgNTWAvlQ/maxresdefault.jpg)](https://www.youtube.com/shorts/GdaXjugd2GM)
+### 🔗 Video 2
+[![Mi video del proyecto](https://img.youtube.com/vi/GdaXjugd2GM/maxresdefault.jpg)](https://www.youtube.com/shorts/GdaXjugd2GM)
 
 
 ## Documentación Técnica
