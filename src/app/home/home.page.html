@@ -1,10 +1,15 @@
 <ion-header>
-  <ion-toolbar color="primary">
-    <ion-title>Registro de Asistencia</ion-title>
+  <ion-toolbar>
+    <ion-title>Registrar Asistencia</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="logout()" color="danger">
+        <ion-icon name="log-out-outline" slot="icon-only"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="ion-padding">
+<ion-content class="ion-padding" scroll="true">
 
   <!-- Icono almanaque -->
   <ion-icon name="calendar-outline" size="large" style="color: #3880ff; margin: 0 auto; display: block;"></ion-icon>
@@ -37,7 +42,7 @@
       Ver Historial
     </ion-button>
   </div>
-  
+
   <!-- Parrafo-->
   <ion-text color="medium">
     <p class="ion-text-center" style="margin-top: 2rem; font-size: 0.9rem;">

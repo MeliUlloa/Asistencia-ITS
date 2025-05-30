@@ -1,0 +1,73 @@
+.login-content {
+  --background: #121212; // fondo oscuro
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .login-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-top: 2rem;
+  }
+
+  .login-form {
+    width: 100%;
+    max-width: 400px;
+    background: #1f1f1f;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  }
+
+  ion-item.input-item {
+    background: #2a2a2a;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    --highlight-color-focused: #28a745;
+    --color: #fff;
+  }
+
+  ion-input {
+    color: #fff;
+  }
+
+  .password-toggle {
+    font-size: 1.4rem;
+    cursor: pointer;
+    color: #0077cc;
+  }
+
+  ion-icon {
+    color: #0077cc;
+  }
+
+  ion-button[type='submit'] {
+    --background: #28a745;
+    --background-activated: #218838;
+    --background-hover: #218838;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-top: 1rem;
+  }
+
+  ion-button[fill='clear'] {
+    color: #4ea3ff;
+    text-decoration: underline;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+  }
+
+  ion-input,
+  ion-item,
+  ion-button {
+    transition: all 0.3s ease;
+  }
+
+  .password-toggle:hover,
+  ion-button[fill='clear']:hover {
+    color: #63c5ff;
+  }
+}

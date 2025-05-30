@@ -121,6 +121,9 @@ export class HomePage {
     this.router.navigate(['/historial']);
   }
 
-
+  async logout() {
+    await this.authService.logout();
+    this.router.navigate(['/login']);
+  }
 }
 

@@ -11,10 +11,14 @@ import { Router } from '@angular/router';
 })
 
 export class LoginPage {
+  // Controla si la contraseña es visible o no
+  showPassword: boolean = false;
+
   // Formulario reactivo y con validaciones
   form = this.fb.group({
     email: ['', [Validators.required, Validators.email]],
     password: ['', [Validators.required]],
+    
   });
 
   constructor(
@@ -38,5 +42,10 @@ export class LoginPage {
     } catch (error) {
       console.error('Error al Iniciar Sesión', error);
     }
+  }
+
+  // visibilidad de la contraseña
+  togglePasswordVisibility() {
+    this.showPassword = !this.showPassword;
   }
 }

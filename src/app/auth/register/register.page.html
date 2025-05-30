@@ -4,33 +4,42 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="ion-padding">
+<ion-content class="ion-padding login-content">
+  <!-- Contenedor centrado -->
+  <div class="login-wrapper">
+    <!-- Formulario reactivo de registro -->
+    <form [formGroup]="form" (ngSubmit)="register()" class="login-form">
+      <!-- Campo Email -->
+      <ion-item class="input-item">
+        <ion-icon name="mail-outline" slot="start"></ion-icon>
+        <ion-input
+          type="email"
+          formControlName="email"
+          placeholder="Correo"
+        ></ion-input>
+      </ion-item>
 
-  <form [formGroup]="form" (ngSubmit)="register()">
-    <ion-item>
-      <ion-input
-        type="email"
-        formControlName="email"
-        placeholder="Correo"
-      ></ion-input>
-    </ion-item>
+      <!-- Campo Contraseña -->
+      <ion-item class="input-item">
+        <ion-icon name="lock-closed-outline" slot="start"></ion-icon>
+        <ion-input
+          type="password"
+          formControlName="password"
+          placeholder="Contraseña"
+        ></ion-input>
+      </ion-item>
 
-    <ion-item>
-      <ion-input
-        type="password"
-        formControlName="password"
-        placeholder="Contraseña"
-      ></ion-input>
-    </ion-item>
+      <!-- Botón Registrarse -->
+      <ion-button expand="block" type="submit" [disabled]="form.invalid">
+        Registrarse
+      </ion-button>
+    </form>
 
-    <ion-button expand="block" type="submit" [disabled]="form.invalid">
-      Registrarse
+    <!-- Botón para ir al Login -->
+    <ion-button fill="clear" (click)="navCtrl.navigateForward('/login')">
+      ¿Ya tenés cuenta? Iniciar sesión
     </ion-button>
-  </form>
-
-  <ion-button fill="clear" (click)="navCtrl.navigateForward('/login')">
-    ¿Ya tenés cuenta? Iniciar sesión
-  </ion-button>
-
+  </div>
 </ion-content>
+
 
