@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
-import { authGuard } from './guard/auth.guard';
+import { AuthGuard } from './guard/auth.guard';
 
 const routes: Routes = [
   {
@@ -20,7 +20,11 @@ const routes: Routes = [
   {
     path: 'register',
     loadChildren: () => import('./auth/register/register.module').then(m => m.RegisterPageModule)
-  }
+  },
+  {
+    path: 'historial',
+    loadChildren: () => import('./pages/historial/historial.module').then( m => m.HistorialPageModule)
+  } 
 ];
 
 @NgModule({

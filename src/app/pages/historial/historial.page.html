@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Historial de Asistencia</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!-- Si hay registros, mostramos la lista -->
+<ion-content *ngIf="registros.length > 0; else sinDatos">
+  <ion-list>
+    <!-- Recorremos cada registro para mostrarlo -->
+    <ion-item *ngFor="let item of registros">
+      <ion-thumbnail slot="start">
+        <!-- Imagen en base64 que guardamos al registrar -->
+        <img [src]="'data:image/jpeg;base64,' + item.fotoBase64" />
+      </ion-thumbnail>
+      <ion-label>
+        <h3>{{ item.fecha }}</h3>  <!-- Fecha del registro -->
+        <p>Tipo: {{ item.tipo }}</p>  <!-- Entrada o salida -->
+        <p>Ubicación: {{ item.ubicacion.lat.toFixed(4) }}, {{ item.ubicacion.lng.toFixed(4) }}</p> <!-- Latitud y longitud con 4 decimales -->
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+<!-- Si no hay registros mostramos un mensaje -->
+<ng-template #sinDatos>
+  <ion-content class="ion-padding">
+    <p>No hay registros aún.</p>
+  </ion-content>
+</ng-template>
+
