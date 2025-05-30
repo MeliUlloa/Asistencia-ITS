@@ -41,4 +41,3 @@ Mira el funcionamiento de la app en el siguiente video:
 ## Documentación Técnica
 
 Puedes descargar la documentación técnica completa [aquí](./docs/App-asistencia..pdf).
-
