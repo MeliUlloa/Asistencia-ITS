@@ -38,7 +38,9 @@ Mira el funcionamiento de la app en el siguiente video:
 
 [![Video de demostración](https://img.youtube.com/vi/MohgNTWAvlQ/maxresdefault.jpg)](https://www.youtube.com/shorts/MohgNTWAvlQ)
 
-[https://www.youtube.com/shorts/GdaXjugd2GM](https://www.youtube.com/shorts/GdaXjugd2GM)
+[![Video de demostración](https://img.youtube.com/vi/MohgNTWAvlQ/maxresdefault.jpg)](https://www.youtube.com/shorts/GdaXjugd2GM)
+
+
 ## Documentación Técnica
 
 Puedes descargar la documentación técnica completa [aquí](./docs/App-asistencia..pdf).
